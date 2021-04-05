@@ -1,0 +1,83 @@
+@import "../../style/color.scss";
+.continer{
+  display: flex;
+     flex-direction: row;
+     justify-content:space-around ;
+}
+.navBar {
+  width: 100%;
+  margin: 0 140px 0 147px;
+  padding: 0 0 0 121px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size:23px;
+  order: 1;
+}
+.navBar_AR{
+  width: 100%;
+  margin: 0 140px 0 147px;
+  padding: 0 121px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size:23px;
+  order: 1;
+}
+    .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  order: 2;
+  cursor: pointer;
+  margin: 0 140px 0 140px;
+    }
+    .btn{
+      font-size: 16px;
+      font-family: Roboto;
+    font-weight: 600;
+    align-items: center;
+    color: $black;
+    background-color:$yellow;
+    width: 6.75rem;
+    height: 6.3vh;
+    border-radius: 1.313rem;
+    border: aliceblue;
+    
+    }
+  
+
+  @media screen and (max-width: 960px) {
+.continer{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around ;
+  flex-wrap: nowrap;
+  width: 960px;
+  margin: 7px 0 0 0px;
+}
+
+
+    .header {
+
+      width: 960px;
+      height:  10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+      }
+  
+    
+      
+        .button {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          order: 2;
+          cursor: pointer;
+          margin: 0 0 0 988px;
+      }
+    
+}

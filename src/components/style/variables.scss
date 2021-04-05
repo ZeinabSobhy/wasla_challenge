@@ -1,0 +1,22 @@
+$font-sm: 0.875rem;
+$font-med: 1.125rem;
+$font-lg: 1.25rem;
+$font-xlg: 3.25rem;
+$font-bid : 1.875rem;
+
+$font-family:'Roboto', sans-serif;
+$subtitle-color: #595f6f;
+
+$btn_background:#ec1c24;
+
+
+.txt{
+  font-size: $font-sm;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1 ;
+  letter-spacing: normal;
+  color: #ffffff;
+  font-family: $font-family;
+}

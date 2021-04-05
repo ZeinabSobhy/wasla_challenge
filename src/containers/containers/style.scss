@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+@import "../../components/Style/Colors.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif, Arial ;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: $white;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 960px){
+  .App{
+    width:960px ;
+  };
+ 
+}

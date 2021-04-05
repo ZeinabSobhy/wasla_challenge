@@ -1,0 +1,115 @@
+
+
+@import "../../style/color.scss";
+.root {
+  width: 100%;
+  height: 90.7vh;
+  &_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-size: cover;
+  };}
+
+  .Baby__img{
+    background-size: cover;
+    height: 104vh;
+    margin-top: -75px;
+    
+  }
+
+  .TextContiner{
+    height: 12.2vh;
+    font-family: "Roboto";
+    font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  text-align: start;
+  margin: 0 0 0 122px;
+  color:$titleText;
+  padding: 13.188rem 0 0 0;
+  }
+  .TextContiner_AR{
+    height: 12.2vh;
+    font-family: "Roboto";
+    font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  text-align: start;
+  color:$titleText;
+  
+  padding: 13.188rem 4.688rem 0 0;
+  // padding: 184px 63px 0 0;
+  }
+  .sellcar__Title{
+    font-size: 35px;
+    letter-spacing: -0.73px;
+    
+  }
+  .sellcar__Title1{
+    font-size: 50px;
+  }
+  .sellcar__Title2{
+    font-size: 25px;
+    letter-spacing: -0.52px;
+  };
+.subtitle{
+  color:$black;
+}
+ 
+ .Specialize{
+   margin: 140px 0 0 0;
+ } 
+
+  
+
+
+.text_btn_start{
+  align-items: flex-start;
+  color: $white;
+
+};
+.icon_start{
+  color: $white;
+  align-items: center;
+  margin: 0 0 -7px 0;
+}
+
+
+@media screen and (max-width: 960px){
+
+  .root {
+    width: 960px;
+    height: 78.7vh;
+    &_wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      background-size: cover;
+    };
+  .sellcar__img{
+    background-size: cover;
+    height: 78.7vh;
+    width: 104%;
+    margin: 50px 0 0 0;
+  }
+
+  .TextContiner{
+    height: 12.2vh;
+    font-family: "Roboto";
+    font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  text-align: start;
+  color:$titleText;
+  padding: 13.188rem 0 0 0
+
+}
+
+
+
+}
+}
