@@ -1,0 +1,22 @@
+@import "../../style/color.scss";
+.card_detils{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 383px;
+//   height: 38px;
+  margin: 182px 0 0 515px;
+
+
+}
+.details_country{
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $titleText;
+}

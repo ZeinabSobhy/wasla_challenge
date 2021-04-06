@@ -13,6 +13,7 @@ export default {
 		home:'الصفحه الرئيسه',
 		about:'عن العياده',
 		contact:'للتواصل بنا',
+		AboutCovid:'معلومات عن كرونا المستجد'
 			},
 			aboutUS:{
 				title1:'عن العياده',

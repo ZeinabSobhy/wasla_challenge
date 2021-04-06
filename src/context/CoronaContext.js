@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { getAllCountry } from "../Api/Coron";
+import { getAllCountry , getonfirmedAndDeaths } from "../Api/Coron";
 
 const CoronaContext = React.createContext([{}, () => {}]);
 
@@ -16,11 +16,18 @@ const CoronaProvider = ({ children }) => {
     );
   }, [Corona]);
 
+
+
+  
+
   return (
-    <CoronaContext.Provider value={[Corona, setCorona]}>
+    <CoronaContext.Provider value={[Corona, setCorona ]}>
       {children}
     </CoronaContext.Provider>
   );
 };
 
 export { CoronaProvider, CoronaContext };
+
+
+

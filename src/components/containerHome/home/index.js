@@ -11,8 +11,8 @@ const Home = () => {
   const [locale, switchLocale] = useContext(LocalizationContext);
 
   return (
-    <div className="root">
-      <div container className="root__wrapper">
+    <div className="contanier">
+      <div container className="contanier__wrapper">
       
         <div
           className="Baby__img"

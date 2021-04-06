@@ -13,11 +13,13 @@
     letter-spacing: normal;
     color: #ffffff;
 }
-.roor{
+.roott{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  width: 100%;
+  height: 48.7vh;
 }
 .ontact_text{
   display: flex;
@@ -45,19 +47,19 @@
   display:flex;
   justify-content:center;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 40px;
   box-shadow:1.25rem 1.25rem 3.75rem 0 rgba(0, 0, 0, 0.4);
-  background-color: #ec1c24;
+  background-color:$yellow;
   width: 12.688rem;
+  border: unset;
   height: 3.125rem;
   margin: 3.125rem 0 0;
   padding: 0.8rem 0.75rem 0.9rem 0.9rem;
+  color: $black;
   &:hover{
-    border: solid 1px #ec1c24;
+    border: solid 1px$yellow;
   }
-  @include breakpoint-down(medium){
-   align-self: center;
-  }
+
 }
 .error_div {
   &_msg{
@@ -93,9 +95,7 @@
   //padding: 0.375rem 1.25rem 0.313rem 17.688rem;
   border-radius: 5px;
   background-color: #ec1c24;
-  @include breakpoint-down(medium){
-    width:18.75rem;
-  }
+ 
 }
 .form_div{
   
@@ -105,18 +105,6 @@ flex-direction: row;
 justify-content: center;
   margin-block-start: 15rem;
   margin-inline-start: 3rem;
-  // @include breakpoint-down(medium){
-  //   margin-block-start: 3rem;
-  //   margin-inline-start: 2.125rem;
-  // }
-  // @include breakpoint-up(large){
-  //   margin-block-start: 3rem;
-  //   margin-inline-start: 0;
-
-  // }
-  // &_ar{
-  //   background-position:2.125rem 1.2rem !important;
-  // }
   &_ele{
     width: 28.75rem;
     height: 3.125rem;
@@ -128,9 +116,7 @@ justify-content: center;
     &:active{
       border: unset;
     }
-    @include breakpoint-down(medium){
-     width:18.75rem;
-    }
+   
     &:hover{
       border: solid 1px #ec1c24;
     }
@@ -164,41 +150,8 @@ h4{
     flex-direction: column;
     justify-content: flex-start;
   }
-  &_selectEn{
-    border-radius: 5px;
-    border: solid 1px #bfc4ce;
-    display:flex;
-    justify-content:flex-start;
-    appearance:none;
-    -webkit-appearance:none;
-    -moz-appearance:none;
-    -ms-appearance:none;
-    // background:url(../../assets/icons/grey-arrow.svg);
-    background-repeat: no-repeat;
-    background-size: 1rem 0.9rem;
-    background-position: 15.5rem 1.2rem ;
 
-    @include breakpoint-up(large){
-      background-position: 25.5rem 1.2rem;
 
-    }
-
-}
-  &_selectAr{
-    border-radius: 5px;
-    border: solid 1px #bfc4ce;
-    display:flex;
-    justify-content:flex-start;
-    appearance:none;
-    -webkit-appearance:none;
-    -moz-appearance:none;
-    -ms-appearance:none;
-    // background:url(../../assets/icons/grey-arrow.svg);
-    background-repeat: no-repeat;
-    background-size: 1rem 0.9rem;
-    background-position: 1.5rem 1.2rem;
-
-  }
   label{
     margin-top: 0.75rem;
     font-family: Roboto;
@@ -213,7 +166,75 @@ h4{
  h4, label{
     display: flex;
   }
-@include breakpoint-up(large){
-  width: 50%;
+
 }
+// .model{
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   width: 600px!important;
+//   height: 473px!important;
+//   margin: 26px 420px 124px 333px!important;
+//   padding: 30px 16px 50px 110px!important;
+//   border-radius: 4px!important;
+//   border: unset !important;
+//   // box-shadow: 0 2px 12px 0 rgba(215, 221, 240, 0.49)!important;
+//   background-color: $white!important;
+// }
+.text_done{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: unset;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  margin: 205px 0 0 463px;
+  width: 500px;
+  height: 400px;
+  background-color: #ffffff ;
+  
+}
+@media screen and (max-width: 960px) {
+  .roott{
+    width: 960px;
+    height: 139.7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  // .model{
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   width: 500px;
+  //   height: 400px;
+  //   margin: 26px 420px 124px 333px;
+  //   padding: 30px 16px 50px 110px;
+  //   border-radius: 4px;
+  //   background-color: #ffffff ;
+
+  // }
+  .text_done{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: unset;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    margin: 431px 0 0 199px;
+    width: 500px;
+    height: 400px;
+    background-color: #ffffff ;
+  }
 }

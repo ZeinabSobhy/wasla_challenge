@@ -16,4 +16,9 @@ export const getAllCountry = () => {
 }
 
 
+export const getonfirmedAndDeaths = (country) => {
+	return axiosInstance.get(`total/dayone/country/${country}`);
+}
+
+
 

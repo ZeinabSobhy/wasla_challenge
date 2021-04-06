@@ -1,6 +1,7 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import "../../AboutCovid/CovidHome/style.scss";
 import { useMediaQuery, Button } from "@material-ui/core";
-
+import TablePagination from "@material-ui/core/TablePagination";
 import { FormattedMessage } from "react-intl";
 import Typography from "@material-ui/core/Typography";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
@@ -13,24 +14,31 @@ import { LocalizationContext } from "../../../context/LocalizationContext";
 import { CoronaContext } from "../../../context/CoronaContext";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
+import Switch from "@material-ui/core/Switch";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import EnhancedTableHead from "@material-ui/core/FormControlLabel";
 
 function AboutCovid() {
   const [Corona, setCorona] = useContext(CoronaContext);
+  const [daily, setDaily] = useContext(CoronaContext);
+  const [filter, setFilter] = useState("");
   const history = useHistory();
+
   return (
     <div className="continer">
-      About covid
-      <Grid>
-        {Corona?.map((d) => (
-          <Card>
+    
+      <Grid className="grid">
+        {Corona.map((d) => (
+          <Card className="card">
+            Country:
             {d.Country}
-            
+            <br/>
             <button
               onClick={() => {
-                history.push(`/AboutCovid/${d.Country}`);
+                history.push(`/AboutCovid/${d.Slug}`);
               }}
             >
-              more
+              more about this country
             </button>
           </Card>
         ))}

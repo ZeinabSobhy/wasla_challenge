@@ -1,7 +1,7 @@
 
 
 @import "../../style/color.scss";
-.root {
+.contanier {
   width: 100%;
   height: 90.7vh;
   &_wrapper {
@@ -43,25 +43,25 @@
   padding: 13.188rem 4.688rem 0 0;
   // padding: 184px 63px 0 0;
   }
-  .sellcar__Title{
-    font-size: 35px;
-    letter-spacing: -0.73px;
+//   .sellcar__Title{
+//     font-size: 35px;
+//     letter-spacing: -0.73px;
     
-  }
-  .sellcar__Title1{
-    font-size: 50px;
-  }
-  .sellcar__Title2{
-    font-size: 25px;
-    letter-spacing: -0.52px;
-  };
-.subtitle{
-  color:$black;
-}
+//   }
+//   .sellcar__Title1{
+//     font-size: 50px;
+//   }
+//   .sellcar__Title2{
+//     font-size: 25px;
+//     letter-spacing: -0.52px;
+//   };
+// .subtitle{
+//   color:$black;
+// }
  
- .Specialize{
-   margin: 140px 0 0 0;
- } 
+//  .Specialize{
+//    margin: 140px 0 0 0;
+//  } 
 
   
 
@@ -80,8 +80,9 @@
 
 @media screen and (max-width: 960px){
 
-  .root {
-    width: 960px;
+  .contanier {
+    width: 340%;
+    // width: 960px;
     height: 78.7vh;
     &_wrapper {
       display: flex;
@@ -89,12 +90,12 @@
       flex-wrap: nowrap;
       background-size: cover;
     };
-  .sellcar__img{
-    background-size: cover;
-    height: 78.7vh;
-    width: 104%;
-    margin: 50px 0 0 0;
-  }
+  // .sellcar__img{
+  //   background-size: cover;
+  //   height: 78.7vh;
+  //   width: 104%;
+  //   margin: 50px 0 0 0;
+  // }
 
   .TextContiner{
     height: 12.2vh;

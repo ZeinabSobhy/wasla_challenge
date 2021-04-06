@@ -23,12 +23,26 @@ const useStyles = makeStyles((theme) => ({
   cardGrid: {
     paddingTop: theme.spacing(8),
     paddingBottom: theme.spacing(8),
+    [theme.breakpoints.down('sm')]: {
+      display:' flex',
+      flexDirection: ' column',
+  alignItems: 'center',
+  justifyContent:' center',
+  margin: '0 0 0 125px',
+		},
+    [theme.breakpoints.down('xs')]: {
+      display:' flex',
+      flexDirection: ' column',
+  alignItems: 'center',
+  justifyContent:' center',
+  margin: '0 0 0 312px',
+    },
   },
   card: {
     height: '100%',
     display: 'flex',
     flexDirection: 'column',
-    
+   
   },
   cardMedia: {
     paddingTop: '56.25%', 
@@ -58,7 +72,7 @@ export default function DoctorInfo() {
     <React.Fragment>
       <CssBaseline />
      
-      <main >
+      <main  className={classes.mainn}>
       
         
         <Container className={classes.cardGrid} maxWidth="md">

@@ -28,7 +28,7 @@ function About() {
 <FormattedMessage id= 'about.subtitle'/>
 
  
-</div>
+</div >
    
     <div className='container_about'>
    

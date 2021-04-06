@@ -14,6 +14,7 @@ btn:'AR',
 home:'Home',
 about:'About',
 contact:'Contact',
+AboutCovid:'About Covid 19' ,
 
 	},
 	aboutUS:{

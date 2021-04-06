@@ -60,8 +60,8 @@ function Header() {
           onClick={handelClickAboutCovid}
           className="link"
         >
-          {/* <FormattedMessage id="header.contact" /> */}
-          About Covid 19
+          <FormattedMessage id="header.AboutCovid" />
+          
         </Typography>
       </Breadcrumbs>
 

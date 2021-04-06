@@ -7,6 +7,7 @@ import { FormContext } from "../../context/FormContext";
 import "../ContactUs/style.scss";
 import { LocalizationContext } from "../../context/LocalizationContext";
 import { Modal } from "@material-ui/core";
+import Img_Done from "../../assets/images/Done.png";
 
 const ContactUs = (props) => {
   const [error, setError] = useState({ fullname: false, message: false });
@@ -89,7 +90,7 @@ const ContactUs = (props) => {
   };
 
   return (
-    <div className="roor">
+    <div className="roott">
       <div className="contact_text">
         <div className="title_contact">Contact us</div>
         <div className="sub_title_contact">
@@ -200,15 +201,13 @@ const ContactUs = (props) => {
 
           <FormControl>
             <button onClick={(e) => handleSubmit(e)} className="btn_confirm">
-              {/* <button onClick={(e) => handleSubmit ==true?(
-            Modal = {setOpen}
-          ):(false)} */}
-              Submint
+              SUBMIT
             </button>
           </FormControl>
         </form>
 
         <Modal
+        className='model'
           BackdropProps={{
             style: { background: "rgba(0, 0, 0, 0.3)" },
           }}
@@ -217,7 +216,14 @@ const ContactUs = (props) => {
           aria-labelledby="simple-modal-title"
           aria-describedby="simple-modal-description"
         >
-          <div>done</div>
+          <div className='text_done'>
+        
+         <div>
+           Thank you 
+         </div>
+          <div>Your message has been delivered
+We’ll get back to you shortly!</div>
+          </div>
         </Modal>
       </div>
     </div>

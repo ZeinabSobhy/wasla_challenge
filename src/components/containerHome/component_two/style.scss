@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 171px 0 0;
+  margin: 110px 171px 0 0;
 }
 .container_about_us_AR {
   font-size: 33px;
@@ -51,6 +51,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin: 110px 0 0 0
 }
 .Small__img {
   background-size: cover;
@@ -77,20 +78,20 @@
 @media screen and (max-width: 960px) {
   .continer {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
   }
   .imgs {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 62px 0 0 0;
+    margin: 62px 0 0 0 !important;
   }
   .sub_title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 107px 0 0 139px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin: 107px 0 0 139px !important;
   }
 }

@@ -1,0 +1,17 @@
+@import "../../style//color.scss";
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.continer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+// .grid{
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+// }
